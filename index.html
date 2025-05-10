@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Tool</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    .logo img {
+      max-width: 300px;
+    }
+
+    .button-container {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .tool-button {
+      background-color: #0a2240;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .tool-button.ai::after {
+      content: "Ai";
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #0a2240;
+      color: white;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="logo-placeholder.png" alt="One Tool Logo" />
+  </div>
+
+  <div class="button-container">
+    <button class="tool-button" onclick="location.href='compressor.html'">image Compressor</button>
+    <button class="tool-button" onclick="location.href='image-to-pdf.html'">image to PDF</button>
+    <button class="tool-button" onclick="location.href='text-to-pdf.html'">text to PDF</button>
+    <button class="tool-button ai" onclick="location.href='ask-ai.html'">Ask Ai</button>
+  </div>
+</body>
+
+</html>
